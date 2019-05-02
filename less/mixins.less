@@ -6,6 +6,20 @@
     border-bottom: 2px dashed @navigation-border;
 }
 
+.custom-button-layout(@justify, @align, @width, @height) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    width: @width;
+    background-color: @button-bg;
+    font-size: @small-font; 
+    height: @height;
+    border-radius: 15px;
+    color: white;
+}
+
 .custom-layout(@justify, @align) {
-    
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
 }
