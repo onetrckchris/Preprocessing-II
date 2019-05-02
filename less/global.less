@@ -1,3 +1,5 @@
+@import 'variables';
+
 * {
   box-sizing: border-box;
 }
@@ -15,23 +17,24 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: @huge-font;
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: @large-font;
   padding-bottom: 10px;
 }
 
 h4 {
-  font-size: 2.5rem;
+  font-size: @medium-font;
   padding-bottom: 10px;
 }
 
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: @small-font;
   padding-bottom: 10px;
+  color: @font-color;
 }
 
 img {

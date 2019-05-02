@@ -1,1 +1,30 @@
 // Navigation Styles here
+@import 'variables';
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0px;
+    border-bottom: 2px dashed lightgray;
+
+    div a {
+        margin-right: 20px;
+        font-size: @small-font;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media @mobile {
+    nav {
+        display: flex;
+        flex-direction: column;
+
+        div {
+            width: 100%;
+            padding-top: 20px;
+            .custom-layout(space-around);
+        }
+    }
+}
