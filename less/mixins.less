@@ -18,8 +18,9 @@
     color: white;
 }
 
-.custom-layout(@justify, @align) {
+.custom-layout(@justify: center, @align: center, @flex-direction: row) {
     display: flex;
     justify-content: @justify;
     align-items: @align;
+    flex-direction: @flex-direction;
 }
